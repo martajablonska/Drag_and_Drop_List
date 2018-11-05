@@ -4,8 +4,11 @@
     box-sizing: border-box;
 }
 
-html {
+body {
     font-family: 'Lato', sans-serif;
+    
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 /*style for boxes and tasks*/
@@ -34,9 +37,9 @@ h3 {
 }
 
 .box {
-    background-color:rgba(65,111,181, 0.6);
-    border:1px solid rgb(65,111,181);
-    width:300px;
+    background-image: linear-gradient(to top, #a7a6cb 0%, #8989ba 52%, #8989ba 100%);
+    
+    width:270px;
     height: 300px;
     margin:10px;
     padding:5px;
@@ -46,6 +49,7 @@ h3 {
 }
 
 .task {
+    opacity: none;
     width:80px;
     height: auto;
     font-family: inherit;
