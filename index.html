@@ -6,31 +6,58 @@
     <meta name="author" content="Marta Jablonska">
     <title>Drag and Drop Tasks List</title>
     <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 </head>
 <body>
-    <h1>Drag and Drop Task List</h1>
     <div class="container">
-        <div class="tasks_box box">
-            <button>Task 1</button>
-            <button>Task 2</button>
-            <button>Task 3</button>
-            <button>Task 4</button>
-            <button>Task 5</button>
-            <button>Task 6</button>
-            <button>Task 7</button>
-            <button>Task 8</button>
-            <button>Task 9</button>
-            <button>Task 10</button>
-            <button>Task 11</button>
-            <button>Task 12</button>
-            <button>Task 13</button>
-            <button>Task 14</button>
-            <button>Task 15</button>
+        <div class="box_container">
+            <h3>Tasks</h3>
+            <div class="box">
+                <button class="task">Task 1</button>
+                <button class="task">Task 2</button>
+                <button class="task">Task 3</button>
+                <button class="task">Task 4</button>
+                <button class="task">Task 5</button>
+                <button class="task">Task 6</button>
+                <button class="task">Task 7</button>
+                <button class="task">Task 8</button>
+                <button class="task">Task 9</button>
+                <button class="task">Task 10</button>
+                <button class="task">Task 11</button>
+                <button class="task">Task 12</button>
+                <button class="task">Task 13</button>
+                <button class="task">Task 14</button>
+                <button class="task">Task 15</button>
+            </div>
         </div>
         <div class="users_boxes">
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
+            <div class="box_container" id="user2">
+                <h3>User 2</h3>
+                <div class="box">
+                    <div class="user_tasks">
+                        <button class="task">Task 13</button>
+                        <button class="task">Task 14</button>
+                        <button class="task">Task 15</button>
+                    </div>
+                    <div class="user_numb">2</div>
+                </div>
+            </div>
+            <div class="box_container" id="user1">
+                <h3>User 1</h3>
+                <div class="box">
+                    <div class="user_tasks">
+                    </div>
+                    <div class="user_numb">1</div>
+                </div>
+            </div>
+              <div class="box_container" id="user3">
+                <h3>User 3</h3>
+                <div class="box">
+                    <div class="user_tasks">
+                    </div>
+                    <div class="user_numb">3</div>
+                </div>
+            </div>
         </div>
     </div>
 </body> 

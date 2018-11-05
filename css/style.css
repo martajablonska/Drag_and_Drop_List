@@ -1,0 +1,85 @@
+/*main style*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+}
+
+/*style for boxes and tasks*/
+
+.container {
+    width:80%;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    padding:0;
+    position: relative;
+}
+
+h3 {
+    margin:0;
+    padding:0;
+}
+
+.box {
+    background-color:rgba(65,111,181, 0.6);
+    border:1px solid rgb(65,111,181);
+    width:300px;
+    height: 300px;
+    margin:10px;
+    padding:5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.task {
+    width:80px;
+    height: auto;
+    font-family: inherit;
+    background-color: transparent;
+    border:none;
+    color:#ffff;
+    margin: 2px 0;
+}
+
+/*style for users*/
+
+.user_tasks {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.users_boxes {
+    display: flex;
+    flex-direction: row;
+}
+
+.user_numb {
+    color:#ffff;
+    font-size:70px;
+    position: absolute;
+    bottom:5px;
+    right:20px;
+}
+
+#user2 {
+    top:30px;
+}
+
+#user3 {
+    top:60px;
+}
