@@ -13,6 +13,7 @@ body {
 .container {
     width:80%;
     margin:auto;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -83,4 +84,29 @@ h3 {
 
 #user3 {
     top:80px;
+}
+
+/*media queries*/
+
+@media (max-width:1000px) {
+    
+    .users_boxes {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #user1 {
+        order:1;
+    }
+    
+    #user2 {
+        top:0;
+        order:2;
+    }
+
+    #user3 {
+        top:0;
+        order:3;
+    }
+
 }
