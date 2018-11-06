@@ -81,6 +81,10 @@ h3 {
     margin: 2px 0;
 }
 
+.task:focus {
+    font-size:23px;
+}
+
 /*style for users*/
 
 .users_boxes {
