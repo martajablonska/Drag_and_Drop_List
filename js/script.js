@@ -1,14 +1,6 @@
 const app = document.querySelector('.container');
 const tasks = document.querySelectorAll('.task');
 
-function dragTransfer(e) {
-    e.dataTransfer.setData('srcId', e.target.id);
-}
-
-tasks.forEach(function(task) {
-   task.addEventListener('dragstart', dragTransfer) 
-});
-
 app.addEventListener('dragover', function(e) {
     e.preventDefault();
 });
@@ -16,12 +8,51 @@ app.addEventListener('dragover', function(e) {
 app.addEventListener('drop', function(e) {
     e.preventDefault();
     
-    let target = e.target;
-    let srcId = e.dataTransfer.getData('srcId');
+    let targetBox = e.target; //box do którego przerzucamy
+    let taskId = e.dataTransfer.getData('taskId'); //id taska
     
-    let droppable = target.classList.contains("box");
+    let droppable = targetBox.classList.contains("box");
+    
+    let taskToMove = document.getElementById(taskId);
      
     if(droppable) {
-         target.appendChild(document.getElementById(srcId));
-     };
+        targetBox.appendChild(taskToMove);
+    };
+        
+    localStorage.setItem('newTasksList', app.innerHTML);
 });
+
+
+//get local storage after page will load
+
+window.addEventListener('load', function(e) {
+    
+    const newPage = localStorage.getItem('newTasksList');
+    if(newPage) {
+        app.innerHTML = newPage;
+    } 
+            
+});
+
+app.addEventListener('dragstart', function(e) {
+    
+    if(e.target.className === "task") {
+        let task = e.target;
+        e.dataTransfer.setData('taskId', e.target.id);
+    };
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
