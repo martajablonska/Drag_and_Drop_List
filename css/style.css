@@ -6,9 +6,6 @@
 
 body {
     font-family: 'Lato', sans-serif;
-    
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 /*style for boxes and tasks*/
@@ -37,9 +34,9 @@ h3 {
 }
 
 .box {
-    background-image: linear-gradient(to top, #a7a6cb 0%, #8989ba 52%, #8989ba 100%);
-    
-    width:270px;
+    background-color:#4F81BC;
+    border: 1px solid #4a74a7;
+    width:300px;
     height: 300px;
     margin:10px;
     padding:5px;
@@ -61,29 +58,29 @@ h3 {
 
 /*style for users*/
 
+.users_boxes {
+    display: flex;
+    flex-direction: row;
+}
+
 .user_tasks {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
 
-.users_boxes {
-    display: flex;
-    flex-direction: row;
-}
-
 .user_numb {
     color:#ffff;
-    font-size:70px;
+    font-size:75px;
     position: absolute;
     bottom:5px;
     right:20px;
 }
 
 #user2 {
-    top:30px;
+    top:40px;
 }
 
 #user3 {
-    top:60px;
+    top:80px;
 }
